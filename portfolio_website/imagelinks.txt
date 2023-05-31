@@ -1,0 +1,34 @@
+Nav images:
+https://i.postimg.cc/PJXRC8Mm/menu-icon.png
+https://i.postimg.cc/NMTNJkd8/close-icon.png
+
+Background image:
+https://i.postimg.cc/PJyQ93YD/lines.png
+https://i.postimg.cc/WzKHDTw2/lines2.png
+
+Profile pic:
+https://i.postimg.cc/RhLg9V5N/profile-pic-round.png
+
+Technologies:
+https://i.postimg.cc/sxZCjWfw/adobexd.png
+https://i.postimg.cc/3wnTn7bC/css3.png
+https://i.postimg.cc/MTL8J5wn/figma.png
+https://i.postimg.cc/nzrtW5y8/html5.png
+https://i.postimg.cc/YqYj8GN6/litmus.png
+https://i.postimg.cc/T2yKLHpH/mailchimp.png
+https://i.postimg.cc/q7krsgQv/mjml.png
+https://i.postimg.cc/JtVVGhGm/photoshop.png
+https://i.postimg.cc/HWfVQ4MW/vscode.png
+
+Portfolio screens:
+https://i.postimg.cc/wMR0ycmR/ANTH-screen-crop.png
+https://i.postimg.cc/3xXfFBbg/DD-screen-crop.png
+https://i.postimg.cc/50Rs2k6M/KQED-screen-crop.png
+https://i.postimg.cc/SKVZwK4R/RCH-screen-crop.png
+https://i.postimg.cc/t70DhZ3S/RH-screen-crop.png
+https://i.postimg.cc/tTTryHR5/RR-screen-crop.png
+
+Contact:
+https://i.postimg.cc/rynqdBHB/email.png
+https://i.postimg.cc/SNnkcZFJ/github.png
+https://i.postimg.cc/Nfdbv457/linkedin.png
