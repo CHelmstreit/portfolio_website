@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>3CAM Featured Exhibitions</title>
+    <script>
+        //Slideshow Script
+        $(function(){ 
+            $('#slideshow > div:gt(0)').hide();
+
+            var slides = setInterval(slideIt, 3000);
+            var playing = true;
+
+            $('#pausePlay').click(function() {
+                if(playing) {
+                    clearInterval(slides);
+                    playing = false;     
+                    $('#pausePlay')
+                    .text("Play")
+                } else {
+                    slides = setInterval(slideIt, 3000);
+                    playing = true;  
+                    $('#pausePlay')
+                    .text("Pause")
+                    slideIt();     
+                }   
+            });
+            function slideIt() {          
+                $('#slideshow > div:first') 
+                .fadeOut(1000)             
+                .next()                   
+                .fadeIn(1000)           
+                .end()
+                .appendTo('#slideshow'); 
+            }
+        });
+    </script>
+</head>
+<body>
+    <!--START NAV MENU-->
+    <a name="top"></a>
+    <div class="new_sidenav" id="the_new_sidenav"> <!--Can't get splash page nav to work on other pages!-->
+        <a href="javascript:void(0)" class="close_button" onclick="closeNavMenu()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="tickets_membership.html">Tickets and Membership</a></li>
+            <li><a href="about3CAM.html">About 3CAM</a></li>
+        </ul>
+      </div>
+      <div class="navcontainer">
+        <div class="navlogo">
+            <a href="index.html">
+                <img class="navbar_logo" src="https://i.postimg.cc/ZnNtmfFZ/3-CAM-logo-Original.png" alt="3CAM logo">
+            </a>
+        </div>
+        <div class="nav_icon" onclick="openNavMenu()"></div>
+    </div>
+    <!--END NAV MENU-->
+    <!--START MAIN-->
+    <div class="container" id="main_container">
+        <h1 class="top-header">What's happening now at 3CAM</h1>
+        <div id="slideshow">
+            <div><img src="https://i.postimg.cc/MKzdqPYD/aapi-art-1.jpg"></div>
+            <div><img src="https://i.postimg.cc/sgD696QX/aapi-art-2.jpg"></div>
+            <div><img src="https://i.postimg.cc/cCR9TPBK/aapi-art-3.jpg"></div>
+            <div><img src="https://i.postimg.cc/pXkkTfGt/aapi-art-4.jpg"></div>
+            <div><img src="https://i.postimg.cc/GtwgFbGw/aapi-art-5.jpg"></div>
+        </div>
+        <div id="buttonContainer"><a href="#" id="pausePlay">Pause</a></div>
+        <h1>Celebrate AAPI Heritage Month at 3CAM</h1>
+        <br>
+        <p>During the month of May, 3CAM will showcase various exhibitions and projects celebrating Asian Americans, Pacific Islanders, and their contributions to the enrichment of American society as a whole.</p>
+        <br>
+        <p>In October of 1978, President Jimmy Carter first proclaimed what was Pacific/Asian-American Heritage Week with the passing of House Joint Resolution 1007. It consisted of the first ten days in May. President George H.W. Bush subsequently signed a bill passed by Congress in 1990 that extended Asian-American Heritage Week into a month-long event, officially being designated Asian-Pacific Heritage Month in 1992.</p>
+        <div class="get_tickets"><a href="tickets_membership.html">Get Tickets</a>
+        <p>Discount and Group rates available.</p>
+        </div>
+        <h2>More Exhibits and Events</h2>
+        <div id="event_and_promo_container">
+            <div class="event_container">
+                <div class="event_card">
+                    <div class="event_photo" id="event_photo_1"><img src="https://i.postimg.cc/C1f6nRZs/olga-delawrence-slab-city.jpg" alt="Slab City"></div>
+                    <div class="event_text">
+                        <h3>The Art of the Lawless</h3>
+                        <p>3CAM takes an in-depth look at the culture and lives of those living in "Slab City" - Imperial County's off-the-grid and unincorporated community where outcasts, squatters, and free spirits call home. Experience the various forms of art, poetry and spoken word performances of Slab City's residents.</p>
+                    </div>
+                </div>
+                <div class="event_card">
+                    <div class="event_photo" id="event_photo_2"><img src="https://i.postimg.cc/x1xssvMP/orchid.jpg" alt="Orchid"></div>
+                    <div class="event_text">
+                        <h3>World of Orchids</h3>
+                        <p>The annual orchid showcase is located inside 3CAM's Mackenzie Bezos Botanical Conservatory. Don't miss your chance to experience the beauty and grace of these orchids.</p>
+                    </div>
+                </div>
+                <div class="event_card">
+                    <div class="event_photo" id="event_photo_3"><img src="https://i.postimg.cc/VvWgXnzn/studio-blackthorns-beer-cans.jpg" alt="Beer Cans"></div>
+                    <div class="event_text">
+                        <h3>LEGEND - Classical Composers Living the 'Thug Life'</h3>
+                        <p>French branding and packaging design studio Blackthorn Design serves up some beer (or at least some very compelling design mock-ups) featuring portraits of classical composers such as Mozart, Beethoven, and Chopin paired with visual cues of American street culture.</p>
+                    </div>
+                </div>
+            </div>
+            <h2>More from 3CAM</h2>
+            <div class="promo_container">
+                <div class="promo_card">
+                    <div class="promo_photo" id="promo_photo_1"><img src="https://i.postimg.cc/GmK0bTYB/moneytree.jpg" alt="money tree"></div>
+                    <div class="promo_text">
+                        <h3>Special Rates and Discounts</h3>
+                        <p>Children, seniors, veterans, members, and groups qualify for special discounted rates at 3CAM. To learn more, head over to the Tickets and Membership page <a href="tickets_membership.html" target="_blank"> here</a>.</p>
+                    </div>
+                </div>
+                <div class="promo_card">
+                    <div class="promo_photo" id="promo_photo_2"><img src="https://i.postimg.cc/xTrV52nd/ipoint-logo-with-text.png" alt="iPoint logo"></div>
+                    <div class="promo_text">
+                        <h3>3CAM Has Partnered with iPoint Advisors</h3>
+                        <p>3CAM has partnered with San Diego based iPoint Advisors in order to maintain awareness for the Arts all throughout the state of California. Together we will implement advocacy for all California art programs, and are in the process of establishing a foundation in order to provide grants to art programs in need of funding. Click <a href="https://mat.miracosta.edu/mat165_cotnoir/StudentWork/Helmstreit_Christopher/midterm/midterm/" target="_blank">here</a> visit iPoint Advosors website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END MAIN-->
+    <!--START FOOTER-->
+    <footer class="footer">
+        <div class="footer_icon">
+            <a href="index.html"><img src="https://i.postimg.cc/fLJQ2WVV/3-CAM-logo-blue.png" alt="3CAM Logo"></a>
+            <div class="btt_button"><a href="#top" id="bttButton">Back to Top</a></div>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_address">
+                <h3>Visit Us</h3>
+                <p>12345 Coast Highway</p>
+                <p>Sierra Beach, California 90909</p>
+            </div>
+            <div class="hours">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10 AM - 6 PM</p>
+                <p>Saturday + Sunday: 9 AM - 6 PM</p>
+            </div>
+            <div class="footer_social_container">
+                <div class="social_nested">
+                    <div class="social_icons" id="facebook"><a href="www.facebook.com"><img src="https://i.postimg.cc/k5KpB33V/facebook-blue.png"></a></div>
+                    <div class="social_icons" id="instagram"><a href="www.instagram.com"><img src="https://i.postimg.cc/C1068PSc/instagram-blue.png"></a></div>
+                    <div class="social_icons" id="twitter"><a href="www.twitter.com"><img src="https://i.postimg.cc/dQ4S7jX9/twitter-blue.png"></a></div>
+                    <div class="social_icons" id="youtube"><a href="www.youtube.com"><img src="https://i.postimg.cc/xT8pLbVV/youtube-blue.png"></a></div>
+                </div>
+                <div class="footer_form_container">
+                    <form class="footer_form" action="mailto:chelmstreit@gmail.com" method="post" enctype="text/plain" name="footerForm">
+                        <label for="form_email">Enter your email to join our mailing list!</label><br>
+                        <input class="form_field" type="email" name="Email_Join" size="25"><input class="form_submit" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+        <script>//Nav Menu Script
+            function openNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "300px";
+            }
+            function closeNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "0px";
+            }
+        </script>
+</body>
+</html>

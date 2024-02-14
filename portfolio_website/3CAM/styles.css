@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+:root {
+    --overlay-color: #03a9f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*=================================/Splash Page==================================*/
+
+.splashpage {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: #231f20;
+    transition: 0.5s ease-in-out;
+}
+
+.splashpage.active {
+    right: 300px;
+}
+
+.splashpage header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.splashpage video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+header .logo {
+    width: 100%;
+}
+header .logo img{
+    width: 100px;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url(https://i.postimg.cc/52bdcSHd/menu-icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url(https://i.postimg.cc/WpqP03RK/close-icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--overlay-color);
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text img {
+    width: 500px;
+    margin: 10px 0px 10px 0px;
+}
+
+.text h2 {
+    font-size: 5em;
+    text-transform: capitalize;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    color: #03a9f4;
+    background: #231f20;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.text a:hover {
+    color: #81d4f9;
+    background: #383536;
+    transition: 0.25s ease-in-out;
+}
+
+.text a:active {
+    color: #b3e5fb;
+    background: #7b7879;
+}
+
+.splashpage_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #231f20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splashpage_menu ul {
+    position: relative;
+}
+
+.splashpage_menu ul li {
+    list-style: none;
+}
+
+.splashpage_menu ul a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--overlay-color);
+}
+
+.splashpage_menu ul a:hover {
+    color: #81d4f9;
+}
+.time_and_location {
+    display:block;
+    z-index: 10;
+    padding-top: 50px;
+}
+
+/*=================================Content Menu==================================*/
+/*====================For pages other than the splash page=======================*/
+
+.new_sidenav {
+    height: 100%;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #231f20;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+  .new_sidenav ul {
+      list-style: none;
+}
+  
+  .new_sidenav a {
+    display: block;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: var(--overlay-color);
+    background: #231f20;
+}
+  
+  .new_sidenav ul li a:hover {
+    color: #81d4f9;
+}
+
+  .new_sidenav ul li a:active {
+    color: #b3e5fb;
+}
+  
+  .new_sidenav .close_button {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+
+  .navcontainer {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 100px;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+  .navbar_logo {
+    width: 100px;
+    float: left;
+}
+
+  .nav_icon {
+    width: 50px;
+    height: 50px;
+    background: url(https://i.postimg.cc/52bdcSHd/menu-icon.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+/*=================================Slideshow==================================*/
+#slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50vw;
+    max-height: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+#slideshow img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#buttonContainer {
+    height: 40px;
+    margin-bottom: 20px;
+    background: #231f20;
+    padding: 10px;
+    border-top: 2px solid #03a9f4;
+}
+
+#pausePlay {
+    width: 100px;
+    background: #231f20;
+    color: var(--overlay-color);
+    text-decoration: none;
+}
+
+/*=================================Global==================================*/
+
+#exhibitions, #calendar, #tickets, #about {
+    background: white;
+    justify-content: flex-start;
+}
+
+.nonsplash_header .logo, .nonsplash_header .toggle {
+    position: sticky;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container h1, h2, p {
+    color: #231f20;
+}
+
+.top-header {
+    font-size: 3.75em;
+    color: #231f20;
+}
+
+.get_tickets {
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.get_tickets a {
+    background: #231f20;
+    color: var(--overlay-color);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.get_tickets p {
+    margin-top: 10px;
+}
+
+.get_tickets a:hover {
+    background: #383536;
+    color: #81d4f9;
+}
+
+.get_tickets a:active {
+    background: #7b7879;
+    color: #b3e5fb;
+}
+
+/*============Footer===========*/
+
+footer {
+    width: 100%;
+    clear: both;
+    background: #231f20;
+    padding: 20px 10px 20px 10px;
+    height: auto;
+    margin-top: 100px;
+    border-top: solid 2px #03a9f4;
+}
+
+footer p, footer h3{
+    color: var(--overlay-color);
+}
+
+.footer_inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_icon {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7b7879;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_icon img {
+    width: 125px;
+}
+
+.btt_button {
+    background: var(--overlay-color);
+    padding: 10px 15px;
+}
+
+.btt_button:hover {
+    background: #81d4f9;
+}
+
+.btt_button:active {
+    background: #b3e5fb;
+}
+
+.btt_button a {
+    color: #231f20;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hours {
+    border-left: 1px solid #7b7879;
+    border-right: 1px solid #7b7879;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer_social_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer_social {
+    display: flex;
+    align-items:baseline;
+    justify-content: space-evenly;
+}
+
+.social_nested {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social_icons {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    justify-self: center;
+}
+
+.footer_form label {
+    color: var(--overlay-color);
+    margin-bottom: 5px;
+}
+
+.form_field, .form_submit {
+    border-style: none;
+    padding: 5px;
+}
+
+.form_field {
+    background: #7b7879;
+    width: 250px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.form_submit {
+    color: var(--overlay-color);
+    background: #383536;
+}
+
+.form_submit:hover {
+    color: #81d4f9;
+}
+
+.form_submit:active {
+    color: #b3e5fb;
+}
+
+/*=================================Exhibitions==================================*/
+#event_and_promo_container {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.event_card {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    border-bottom: 1px solid var(--overlay-color);
+}
+
+.event_photo img {
+    width: 450px;
+    height: 300px;
+    flex: 1;
+}
+
+.event_text {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.event_text h3 {
+    text-decoration: underline 2px var(--overlay-color);
+    margin-bottom: 10px;
+}
+
+.promo_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.promo_card {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+
+
+.promo_photo img {
+    width: 450px;
+    height: 300px;
+    flex: 1;
+}
+
+.promo_text {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.promo_text h3 {
+    text-decoration: underline 2px var(--overlay-color);
+    margin-bottom: 10px;
+}
+
+/*=================================Tickets and Membership==================================*/
+
+#ticket_header {
+    font-size: 3.75em;
+    color: #231f20;
+}
+
+form ul, .payment_info ul {
+    list-style: none;
+}
+
+form h2, .payment_info h2 {
+    text-decoration: underline solid 2px var(--overlay-color);
+}
+
+.outer_form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ticket_form_contact label {
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    text-align: left;
+}
+
+.ticket_form_contact input {
+    width: 250px;
+    margin: 5px;
+}
+
+.ticket_form_info ul li {
+    margin: 5px 0px 5px 0px;
+}
+
+.ticket_form_info label {
+    display: inline-block;
+    clear: left;
+    width: 435px;
+    text-align: left;
+}
+
+.membership_info_container input {
+    margin: 10px;
+}
+
+.payment_info{
+    width: 100%;
+    border-top: solid 1px #231f20;
+    padding-top: 20px;
+}
+
+.payment_info label {
+    display: inline-block;
+    clear: left;
+    width: 260px;
+    text-align: left;
+}
+
+.payment_info input {
+    margin: 5px;
+}
+
+.outer_input, .outer_membership {
+    padding: 10px;
+    max-width: 550px;
+}
+
+#form_buttons {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form_btns {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    background: #231f20;
+    color: var(--overlay-color);
+    font-size: 1em;
+    border: none;
+}
+
+.form_btns:hover {
+    background: #383536;
+    color: #81d4f9;
+}
+
+.form_btns:active {
+    background: #7b7879;
+    color: #b3e5fb;
+}
+
+/*=================================Calendar==================================*/
+
+.calendar_h1 {
+    font-size: 3.75em;
+    color: #231f20;
+}
+
+.calendar_container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: 1fr;
+}
+
+.calendar_items {
+    transition: all 0.25s linear;
+}
+
+.calendar_items img {
+   width: 100%;
+}
+
+.calendar_items h3 {
+    margin-top: 5px;
+    text-decoration: underline solid 2px var(--overlay-color);
+}
+
+.calendar_items h4 {
+    margin-bottom: 5px;
+}
+
+/*=================================About==================================*/
+
+#about_h1 {
+    font-size: 3.75em;
+    color: #231f20;
+}
+
+#museum_img {
+    width: 100%;
+}
+
+#visit_h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: solid 2px var(--overlay-color);
+}
+/*-------------------media queries----------------*/
+
+@media (max-width: 798px) {
+    .splashpage, .splashpage header {
+        padding: 40px;
+    }
+
+    .text img {
+        width: 350px;
+        transition: 0.25s ease-in-out;
+    }
+
+    .top-header, .calendar_h1, #ticket_header, #about_h1 {
+        font-size: 3em;
+        transition: 0.25s ease-in-out;
+    }
+
+    .footer_hours {
+        margin-top: 10px;
+    }
+
+    .hours {
+        border: none;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 549px) {
+    .top-header, .calendar_h1, #ticket_header {
+        font-size: 2em;
+    }
+
+}

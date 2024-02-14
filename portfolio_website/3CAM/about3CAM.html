@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About 3CAM</title>
+</head>
+<body>
+    <!--START NAV MENU-->
+    <a name="top"></a>
+    <div class="new_sidenav" id="the_new_sidenav"> <!--Can't get splash page nav to work on other pages!-->
+        <a href="javascript:void(0)" class="close_button" onclick="closeNavMenu()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="tickets_membership.html">Tickets and Membership</a></li>
+            <li><a href="about3CAM.html">About 3CAM</a></li>
+        </ul>
+      </div>
+      <div class="navcontainer">
+        <div class="navlogo">
+            <a href="index.html">
+                <img class="navbar_logo" src="https://i.postimg.cc/ZnNtmfFZ/3-CAM-logo-Original.png" alt="3CAM logo">
+            </a>
+        </div>
+        <div class="nav_icon" onclick="openNavMenu()"></div>
+    </div>
+    <!--END NAV MENU-->
+    <!--START MAIN-->
+    <div class="container" id="main_container">
+        <h1 id="about_h1">About 3CAM</h1>
+        <h2>The California Classical and Contemporary Art Museum</h2>
+        <br>
+        <p><strong>The mission of the California Classical and Contemporary Art Museum is to promote, celebrate, and appreciate California’s people, cultures and unrivaled diversity through art, science, and performance.</strong></p>
+        <br>
+        <p>3CAM strives to create experiences that help to not only celebrate the lives of Californians, but also those around the world, and in doing so, enrich both. As a place with a sense of diversity like no other, the world serves as not only our inspiration, but as a connection to each of our individual stories as Californians.</p>
+            <br>
+        <p>3CAM is proud of it's may partnerships with museums and institutions around the globe. As such, 3CAM curates exhibits from nearly every country. The trust that other institutions put into 3CAM to best represent their specific culture and society speaks volumes.</p>
+        <br>
+        <img id="museum_img" src="https://i.postimg.cc/d03fvHwX/museum.jpg" alt="museum">
+        <br>
+        <div id="visit_h2"><h2>Plan your visit today!</h2></div>
+    </div>
+    <!--END MAIN-->
+    <!--START FOOTER-->
+    <footer class="footer">
+        <div class="footer_icon">
+            <a href="index.html"><img src="https://i.postimg.cc/fLJQ2WVV/3-CAM-logo-blue.png" alt="3CAM Logo"></a>
+            <div class="btt_button"><a href="#top" id="bttButton">Back to Top</a></div>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_address">
+                <h3>Visit Us</h3>
+                <p>12345 Coast Highway</p>
+                <p>Sierra Beach, California 90909</p>
+            </div>
+            <div class="hours">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10 AM - 6 PM</p>
+                <p>Saturday + Sunday: 9 AM - 6 PM</p>
+            </div>
+            <div class="footer_social_container">
+                <div class="social_nested">
+                    <div class="social_icons" id="facebook"><a href="www.facebook.com"><img src="https://i.postimg.cc/k5KpB33V/facebook-blue.png"></a></div>
+                    <div class="social_icons" id="instagram"><a href="www.instagram.com"><img src="https://i.postimg.cc/C1068PSc/instagram-blue.png"></a></div>
+                    <div class="social_icons" id="twitter"><a href="www.twitter.com"><img src="https://i.postimg.cc/dQ4S7jX9/twitter-blue.png"></a></div>
+                    <div class="social_icons" id="youtube"><a href="www.youtube.com"><img src="https://i.postimg.cc/xT8pLbVV/youtube-blue.png"></a></div>
+                </div>
+                <div class="footer_form_container">
+                    <form class="footer_form" action="mailto:chelmstreit@gmail.com" method="post" enctype="text/plain" name="footerForm">
+                        <label for="form_email">Enter your email to join our mailing list!</label><br>
+                        <input class="form_field" type="email" name="Email_Join" size="25"><input class="form_submit" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+        <script>//Nav Menu Script
+            function openNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "300px";
+            }
+            function closeNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "0px";
+            }
+        </script>
+</body>
+</html>

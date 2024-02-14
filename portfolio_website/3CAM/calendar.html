@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>3CAM Calendar</title>
+</head>
+<body>
+    <!--START NAV MENU-->
+    <a name="top"></a>
+    <div class="new_sidenav" id="the_new_sidenav"> <!--Can't get splash page nav to work on other pages!-->
+        <a href="javascript:void(0)" class="close_button" onclick="closeNavMenu()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="tickets_membership.html">Tickets and Membership</a></li>
+            <li><a href="about3CAM.html">About 3CAM</a></li>
+        </ul>
+      </div>
+      
+      <div class="navcontainer">
+        <div class="navlogo">
+            <a href="index.html">
+                <img class="navbar_logo" src="https://i.postimg.cc/ZnNtmfFZ/3-CAM-logo-Original.png" alt="3CAM logo">
+            </a>
+        </div>
+        <div class="nav_icon" onclick="openNavMenu()"></div>
+    </div>
+    <!--END NAV MENU-->
+    <!--START MAIN-->
+    <div class="container" id="main_container">
+        <h1 class="calendar_h1">Upcoming Events at 3CAM</h1>
+        <h2>A look at what's to come.</h2>
+        <br>
+        <div class="calendar_container">
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/m2TFtKJP/3d-render.jpg" alt="3d render">
+                <h3>"3D" Sculpture</h3>
+                <h4>1/1/22-1/14/22</h4>
+                <p>An exploration of digital sculptures created with programs such as Maya and Blender.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/brgrxNWs/cyber-city.jpg" alt="cyber city">
+                <h3>Cyber City</h3>
+                <h4>1/15/22-1/29/22</h4>
+                <p>Retired silicon valley engineer Tilde Ampersand's stunning cityscapes created using old circut boards and dynamic lighting.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/mZyPf8kB/italian-sculpture.jpg" alt="sculpture">
+                <h3>Classical Sculptures</h3>
+                <h4>2/1/22-2/14/22</h4>
+                <p>3CAM's review of classical Italian sculptures on loan from Florence's Uffizi Gallery.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/02ZKmc1c/light-painting.jpg" alt="light painting">
+                <h3>Light Painting</h3>
+                <h4>2/15/22-2/30/22</h4>
+                <p>Bright lights, movement, and long exposures create these fantastic images.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/QtLFszcx/oculus-painting.jpg" alt="oculus painting">
+                <h3>Art and Augmented Reality</h3>
+                <h4>3/1/22-3/15/22</h4>
+                <p>3CAM explores the juxtipozition, as well as the incorporation of physical and virtual art.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/g2TwtjJh/orchestra.jpg" alt="orchestra">
+                <h3>California Philharmonic</h3>
+                <h4>3/16/22-3/30/22</h4>
+                <p>The California Philharmonic will play a series of concerts at 3CAM's Santana Theatre.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/BvPjr3LV/legos.jpg" alt="legos">
+                <h3>Life in Legos</h3>
+                <h4>4/1/22-4/15/22</h4>
+                <p>Brick Bybrick creates stunning landscapes, as well as depictions of everyday life with the iconic building system.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/qR8z7GGc/singer.jpg" alt="singer">
+                <h3>California Soul Sessions</h3>
+                <h4>4/16/22-4/30/22</h4>
+                <p>3CAM's Santana Theatre hosts this annual concert series featuring various Jazz, Blues, Hip Hop and Neo-Soul performances.</p>
+            </div>
+            <div class="calendar_items">
+                <img src="https://i.postimg.cc/8cNsfry2/vessels.jpg" alt="vessels">
+                <h3>Vessels</h3>
+                <h4>5/1/22-5/15/22</h4>
+                <p>An exploration of the beauty and elegance of vessels and pottery from around the world.</p>
+            </div>
+        </div>
+    </div>
+    <div class="get_tickets">
+        <a href="tickets_membership.html">Get Tickets</a>
+        <p>Don't miss out! Purchase your tickets ahead of time.</p>
+    </div>
+    <!--END MAIN-->
+    <!--START FOOTER-->
+    <footer class="footer">
+        <div class="footer_icon">
+            <a href="index.html"><img src="https://i.postimg.cc/fLJQ2WVV/3-CAM-logo-blue.png" alt="3CAM Logo"></a>
+            <div class="btt_button"><a href="#top" id="bttButton">Back to Top</a></div>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_address">
+                <h3>Visit Us</h3>
+                <p>12345 Coast Highway</p>
+                <p>Sierra Beach, California 90909</p>
+            </div>
+            <div class="hours">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10 AM - 6 PM</p>
+                <p>Saturday + Sunday: 9 AM - 6 PM</p>
+            </div>
+            <div class="footer_social_container">
+                <div class="social_nested">
+                    <div class="social_icons" id="facebook"><a href="www.facebook.com"><img src="https://i.postimg.cc/k5KpB33V/facebook-blue.png"></a></div>
+                    <div class="social_icons" id="instagram"><a href="www.instagram.com"><img src="https://i.postimg.cc/C1068PSc/instagram-blue.png"></a></div>
+                    <div class="social_icons" id="twitter"><a href="www.twitter.com"><img src="https://i.postimg.cc/dQ4S7jX9/twitter-blue.png"></a></div>
+                    <div class="social_icons" id="youtube"><a href="www.youtube.com"><img src="https://i.postimg.cc/xT8pLbVV/youtube-blue.png"></a></div>
+                </div>
+                <div class="footer_form_container">
+                    <form class="footer_form" action="mailto:chelmstreit@gmail.com" method="post" enctype="text/plain" name="footerForm">
+                        <label for="form_email">Enter your email to join our mailing list!</label><br>
+                        <input class="form_field" type="email" name="Email_Join" size="25"><input class="form_submit" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+        <script>//Nav Menu Script
+            function openNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "300px";
+            }
+            function closeNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "0px";
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>3CAM Home</title>
+</head>
+<body>
+    <!--Main Page-->
+    <section class="splashpage">
+        <header>
+            <div class="logo"><img src="https://i.postimg.cc/ZnNtmfFZ/3-CAM-logo-Original.png" alt="3cam logo"></div>
+            <div class="toggle"></div> <!--Houses the Menu toggle button-->
+        </header>
+        <video src="https:////cdn-cf-east.streamable.com/video/mp4/8tky4h.mp4?Expires=1708121582160&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=e3KAO9XAuAWNHCOkeppX3yxH52VWrtWZW2NFdJ6~tvaf4Zoe1mDiPOn6Ae0aacmzsR9Q84epER~guAsEw0q1~hGMhN2~rtrEdwaJWFpxqfR4Ta4jhiWNA4HTopBw44rReGxh7JsFaZcMkQYXBb~J7wwa11yLOukBDIdZ~GGisx9ExpgxgT1cVMJqSu4y6r4IFhwWu9paO5QGN9TbHmZxqJDljDzJ5fiownNviS67Muw7dEtuKywfikBD64zIWQMSC94Ia9EXhMWDPNcm2ihI83NncxzZ-srzGupBxM3qEog73JeN4rkIzjj3OIccxzYyyRsa8GX4W-DPw0fQvPmZkw__" muted loop autoplay></video>
+        <div class="overlay"></div> <!--For color overlay-->
+            <div class="text">
+                <h3>Welcome to</h3>
+                <img src="https://i.postimg.cc/ZnNtmfFZ/3-CAM-logo-Original.png" alt="3cam logo">
+                <h3>The California Classical and Contemporary Art Museum</h3>
+                <a href="exhibitions.html">What's happening now at 3CAM</a>
+                <div class="time_and_location">
+                    <p>12345 Coast Highway • Sierra Beach • California • 90909</p>
+                    <p>Monday - Friday: 10 AM - 6 PM</p>
+                    <p>Saturday + Sunday: 9 AM - 6 PM</p>
+                </div>
+            </div>
+    </section>
+    <!--Menu-->
+    <div class="splashpage_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="tickets_membership.html">Tickets and Membership</a></li>
+            <li><a href="about3CAM.html">About 3CAM</a></li>
+        </ul>
+    </div>
+    <script>
+        //Open and close the menu - menu slides in from the right, page pushes to the left
+        var menuToggle = document.querySelector('.toggle');
+        var splashpage = document.querySelector('.splashpage');
+
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            splashpage.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

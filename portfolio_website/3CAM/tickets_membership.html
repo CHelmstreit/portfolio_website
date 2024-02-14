@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>3CAM Tickets and Membership</title>
+</head>
+<body>
+    <!--START NAV MENU-->
+    <a name="top"></a>
+    <div class="new_sidenav" id="the_new_sidenav"> <!--Can't get splash page nav to work on other pages!-->
+        <a href="javascript:void(0)" class="close_button" onclick="closeNavMenu()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="tickets_membership.html">Tickets and Membership</a></li>
+            <li><a href="about3CAM.html">About 3CAM</a></li>
+        </ul>
+      </div>
+      
+      <div class="navcontainer">
+        <div class="navlogo">
+            <a href="index.html">
+                <img class="navbar_logo" src="https://i.postimg.cc/ZnNtmfFZ/3-CAM-logo-Original.png" alt="3CAM logo">
+            </a>
+        </div>
+        <div class="nav_icon" onclick="openNavMenu()"></div>
+    </div>
+    <!--END NAV MENU-->
+    <!--START MAIN-->
+    <div class="container" id="main_container">
+        <h1 id="ticket_header">Tickets and Membership</h1>
+        <h2>Experience the California Classical and Contemporary Art Museum for yourself.</h2>
+        <br>
+        <div class="ticket_form_container">
+            <form action="mailto:chelmstreit@gmail.com?subject=New%Ticket%Order" enctype="text/plain" method="post" class="ticket_form">
+                <ul class="outer_form">
+                    <li class="outer_input">
+                        <div class="ticket_input_container">
+                            <div class="ticket_form_contact">
+                                <h2>Contact Information</h2>
+                                <br>
+                                <p>Please enter your contact information in the fields below.</p>
+                                <ul>
+                                    <li>
+                                        <label for="first_name">First name</label>
+                                        <input type="text" id="first_name" placeholder="Enter your first name here" name="first_name" size="20" maxlength="20">
+                                    </li>
+                                    <li>
+                                        <label for="last_name">Last name</label>
+                                        <input type="text" id="last_name" placeholder="Enter your last name here" name="last_name" size="20" maxlength="20">
+                                    </li>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter your email here" name="email" size="20" maxlength="50">
+                                    </li>
+                                    <li>
+                                        <label for="phone_number">Phone number</label>
+                                        <input type="text" id="phone_number" placeholder="Enter your phone number here" name="phone_number" size="20" maxlength="20">
+                                    </li>
+                                    <li>
+                                        <label for="member_id">Membership ID*</label>
+                                        <input type="text" id="member_id" placeholder="Enter your membership ID here" name="member_id" size="20" maxlength="20">
+                                    </li>
+                                </ul>
+                                <p>*Please leave this field blank if you are not a member.</p>
+                            </div>
+                            <br>
+                            <div class="ticket_form_info">
+                                <h2>Ticket Information</h2>
+                                <br>
+                                <p>Please make your ticket selections below, including the type and number of tickets. 3CAM welcomes children under 5 years old free of charge.</p>
+                                <ul>
+                                    <li>
+                                        <label>General Admission (Adult) - $20.00</label>
+                                        <select name="tickets_general" size="1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>Members (Membership ID Required) - $15.00</label>
+                                        <select name="tickets_member" size="1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label>Children (ages 6-17 years) - $10.00</label>
+                                        <select name="tickets_child" size="1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </li>
+                                    <li>   
+                                        <label>Seniors (ages 55+) - $10.00</label>
+                                        <select name="tickets_senior" size="1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </li>
+                                    <li> 
+                                        <label>Military/Veterans (DoD/VIC card required) - $10.00</label>
+                                        <select name="tickets_veteran" size="1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="outer_membership">
+                        <div class="membership_info_container">
+                            <h2>Membership Information</h2>
+                            <br>
+                            <label for="new_member"><strong>New membership ($99 per year)</strong></label>
+                            <input type="checkbox" name="new_member" value="ON">
+                            <br>
+                            <p>By becoming a member, your next visit is free (membership holder only), and are entitled to discounted ticket rates for future visits. You are also eligible for exclusive event invites free of charge.<strong> Membership will be automatically renewed annually unless otherwise requested.</strong></p>
+                            <br>
+                            <p>3CAM is committed to the environment. Aside from receiving your Membership ID in the mail, all member communications are paperless and will be sent via email or text.</p>
+                            <br>
+                            <label for="mailing_list"><strong>Subscribe to our mailing list</strong></label>
+                            <input type="checkbox" name="" value="ON">
+                            <p>Subscribe to the 3CAM mailing list to be the first to receive exclusive offers, news, and updates. You may opt out at any time.</p>
+                            <p>You may also enter your email address at the bottom of the page to join the mailing list.</p>
+                            <br>
+                            <div id="form_questions">
+                                <h3>Other Information</h3>
+                                <br>
+                                <p><strong>Will you require disability accomidations?</strong></p>
+                                <input type="radio" name="disability" value="Yes."><label>Yes</label>
+                                <input type="radio" name="disability" value="No"><label>No</label>
+                                <p><strong>Would you like to know more about discounted group rates?<br> (If so, a representative will contact you within 1 business day.)</strong></p>
+                                <input type="radio" name="discount" value="Yes."><label>Yes</label>
+                                <input type="radio" name="discount" value="No"><label>No</label><br>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <br>
+                <div class="payment_info">
+                    <h2>Credit/Debit Card Payment Information</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <label>Name On Card:</label>
+                            <input type="text" name="first_name" size="20" maxlength="20">
+                        </li>
+                        <li>
+                            <label for="cc_number">Credit Card Number:</label>
+                            <input id="cc_number" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                        </li>
+                        <li>
+                            <label for="cc_exp_date">Expiration Date (Month/Year):</label>
+                            <input id="cc_exp_date_month" type="text" name="cc_exp_date_month" size="2" maxlength="2" placeholder="XX">
+                            <input id="cc_exp_date_year" type="text" name="cc_exp_date_year" size="4" maxlength="4" placeholder="XXXX">
+                        </li>
+                    </ul>
+                </div>
+                <div class="submit_container">
+                    <div class="submit_info">
+                        <br>
+                        <p><strong>We are unable to accept cash or checks for online purchases. We apologize for any inconvenience this may cause.</strong></p>
+                        <p><strong>A confirmation email with your receipt will be sent to the email provided. Please print a copy of your receipt beforehand or show the confirmation email upon your visit.</strong></p>
+                        <p><strong>If you are purchasing or renewing a membership, please allow up to 2 weeks for your membership ID to be mailed to you.</strong></p>
+                    </div>
+                    <div id="form_buttons">
+                        <input type="submit" value="Submit" class="form_btns">
+                        <input type="reset" value="Clear" class="form_btns">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--END MAIN-->
+    <!--START FOOTER-->
+    <footer class="footer">
+        <div class="footer_icon">
+            <a href="index.html"><img src="https://i.postimg.cc/fLJQ2WVV/3-CAM-logo-blue.png" alt="3CAM Logo"></a>
+            <div class="btt_button"><a href="#top" id="bttButton">Back to Top</a></div>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_address">
+                <h3>Visit Us</h3>
+                <p>12345 Coast Highway</p>
+                <p>Sierra Beach, California 90909</p>
+            </div>
+            <div class="hours">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10 AM - 6 PM</p>
+                <p>Saturday + Sunday: 9 AM - 6 PM</p>
+            </div>
+            <div class="footer_social_container">
+                <div class="social_nested">
+                    <div class="social_icons" id="facebook"><a href="www.facebook.com"><img src="https://i.postimg.cc/k5KpB33V/facebook-blue.png"></a></div>
+                    <div class="social_icons" id="instagram"><a href="www.instagram.com"><img src="https://i.postimg.cc/C1068PSc/instagram-blue.png"></a></div>
+                    <div class="social_icons" id="twitter"><a href="www.twitter.com"><img src="https://i.postimg.cc/dQ4S7jX9/twitter-blue.png"></a></div>
+                    <div class="social_icons" id="youtube"><a href="www.youtube.com"><img src="https://i.postimg.cc/xT8pLbVV/youtube-blue.png"></a></div>
+                </div>
+                <div class="footer_form_container">
+                    <form class="footer_form" action="mailto:chelmstreit@gmail.com" method="post" enctype="text/plain" name="footerForm">
+                        <label for="form_email">Enter your email to join our mailing list!</label><br>
+                        <input class="form_field" type="email" name="Email_Join" size="25"><input class="form_submit" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+        <script>//Nav Menu Script
+            function openNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "300px";
+            }
+            function closeNavMenu() {
+                document.getElementById("the_new_sidenav").style.width = "0px";
+            }
+        </script>
+</body>
+</html>
